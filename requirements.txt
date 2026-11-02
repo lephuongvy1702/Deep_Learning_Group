@@ -1,0 +1,28 @@
+# ==========================================
+# REQUIREMENTS - DU AN XAP XI GAUSSIAN 2D BANG PYTORCH
+# ==========================================
+#
+# CAI DAT TAT CA THU VIEN:
+#   python -m pip install --upgrade pip
+#   pip install -r requirements.txt
+#
+# Neu muon cai tung thu vien, dung cac lenh:
+#   pip install numpy
+#   pip install pandas
+#   pip install matplotlib
+#   pip install torch
+#   pip install torchviz
+#   pip install jupyter
+#   pip install notebook
+#
+# ==========================================
+# CAC GOI PYTHON CAN CAI
+# ==========================================
+
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+torch>=1.10.0
+torchviz>=0.0.2
+jupyter>=1.0.0
+notebook>=6.4.0
