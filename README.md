@@ -5,16 +5,16 @@ Dự án xây dựng và huấn luyện mô hình Mạng Nơ-ron Tích chập (C
 ## Thành viên nhóm & Phân công công việc
 |STT|Thành viên|Vai trò & Nhiệm vụ chính|File phụ trách|
 |-----|-----|-------|------|
-|1|Minh Thùy|Tiền xử lý dữ liệu, Data Augmentation, xây dựng DataLoader và trực quan hóa phân bố dữ liệu|src/01_dataset.ipynb|
+|1|Như Ý|Tiền xử lý dữ liệu, Data Augmentation, xây dựng DataLoader và trực quan hóa phân bố dữ liệu|src/01_dataset.ipynb|
 |2|Văn Hậu|Thiết kế kiến trúc mạng EmotionCNN, vẽ sơ đồ kiến trúc và quản lý lưu/nạp mô hình|src/02_model.ipynb|
 |3|Phương Vy|Xây dựng vòng lặp huấn luyện (Train/Val), tối ưu hóa (Adam, ReduceLROnPlateau), lưu checkpoint & vẽ Learning Curves|src/03_train.ipynb|
-|4|Như Ý|Đánh giá mô hình trên tập Test, vẽ Confusion Matrix, xuất Classification Report và trực quan hóa Conv Filters|src/04_evaluate.ipynb|
+|4|Minh Thùy|Đánh giá mô hình trên tập Test, vẽ Confusion Matrix, xuất Classification Report và trực quan hóa Conv Filters|src/04_evaluate.ipynb|
 
 ## Cấu trúc thư mục dự án
 ```
 fer_project/
 │
-├── data/                               # [Minh Thùy phụ trách] Chứa dữ liệu
+├── data/                               # [Như Ý phụ trách] Chứa dữ liệu
 │   └── fer2013.csv                     # File dữ liệu tải từ Kaggle đặt ở đây
 │
 ├── models/                             # [Văn Hậu & Phương Vy] Lưu trọng số mô hình đã train
@@ -25,16 +25,16 @@ fer_project/
 │   └── training_history.csv            # File CSV lưu loss, accuracy qua từng epoch
 │
 ├── figures/                            # [Minh Thùy & Như Ý] Lưu toàn bộ hình ảnh, biểu đồ
-│   ├── dataset_distribution.png        # Biểu đồ phân bố 7 lớp cảm xúc (Minh Thùy)
+│   ├── dataset_distribution.png        # Biểu đồ phân bố 7 lớp cảm xúc (Như Ý)
 │   ├── loss_acc_curves.png             # Biểu đồ học tập loss/acc (Phương Vy)
-│   ├── confusion_matrix.png            # Ma trận nhầm lẫn (Như Ý)
-│   └── conv_filters.png                # Hình trực quan hóa các bộ lọc tích chập (Như Ý)
+│   ├── confusion_matrix.png            # Ma trận nhầm lẫn (Minh Thùy)
+│   └── conv_filters.png                # Hình trực quan hóa các bộ lọc tích chập (Minh Thùy)
 │
 ├── src/                                # Thư mục chứa mã nguồn chính 
-│   ├── dataset.ipynb                   # [Minh Thùy] Xử lý dữ liệu & Data Augmentation
+│   ├── dataset.ipynb                   # [Như Ý] Xử lý dữ liệu & Data Augmentation
 │   ├── model.ipynb                     # [Văn Hậu] Đnh nghĩa kiến trúc mạng CNN
 │   ├── train.ipynb                     # [Phương Vy] Vòng lặp huấn luyện, tối ưu & lưu log
-│   └── evaluate.ipynb                  # [Như Ý] Đánh giá, Confusion Matrix & Visualize Filters
+│   └── evaluate.ipynb                  # [Minh Thùy] Đánh giá, Confusion Matrix & Visualize Filters
 │
 ├── FER_CNN_.ipynb                      # Notebook chạy chung lúc đầu để cả nhóm test
 ├── requirements.txt                    # Danh sách các thư viện cần cài đặt (torch, pandas, seaborn,...)
